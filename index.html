@@ -16,12 +16,24 @@
   </header>
 
   <section id="contact">
-    <h2>聯絡方式</h2>
-    <ul>
-      <li>✉️ jacob20020159@gmail.com</li>
-      <li>📍Zhongzheng Dist., Taipei City</li>
-    </ul>
-  </section>
+  <h2>contact me</h2>
+  <ul>
+    <li>
+      <span onclick="copyEmail()" style="cursor:pointer;">✉️</span>
+      jacob20020159@gmail.com
+    </li>
+    <li>📍Zhongzheng Dist., Taipei City</li>
+  </ul>
+</section>
+  
+<script>
+function copyEmail() {
+  const email = "jacob20020159@gmail.com";
+  navigator.clipboard.writeText(email).then(() => {
+    alert("Email is copied！");
+  });
+}
+</script>
 
   <section id="education">
     <h2>Education</h2>
