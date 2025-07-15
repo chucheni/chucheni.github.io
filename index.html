@@ -38,10 +38,10 @@ function copyEmail() {
   <section id="education">
   <h2>Education</h2>
   <!-- 清華大學 -->
-  <div>
-    <p>清華大學 統計與數據科學研究所 碩士（2024 – Present）</p>
-    <button onclick="toggle('nthu-courses')">Courses/Skills</button>
-    <ul id="nthu-courses" style="display: none; margin-top: 10px;">
+  <div class="school-block">
+    <span class="folder-icon" onclick="toggle('nthu-courses')" title="Courses / Skills">📂</span>
+    清華大學 統計與數據科學研究所 碩士（2024 – Present）
+    <ul id="nthu-courses" class="course-list">
       <li>Quality Control（Shewhart Charts、CUSUM Charts）</li>
       <li>Statistical Computing（in R）</li>
       <li>Multivariate Analysis（PCA、Classification、Clustering）</li>
@@ -49,22 +49,24 @@ function copyEmail() {
   </div>
 
   <!-- 東吳大學 -->
-  <div style="margin-top: 20px;">
-    <p>東吳大學 財務工程與精算數學系 學士（2020–2024）</p>
-    <button onclick="toggle('scu-courses')">Courses/Skills</button>
-    <ul id="scu-courses" style="display: none; margin-top: 10px;">
-      <li>QUANTITATIVE TRADING（Trading Strategy、Technical Analysis、Optimization）</li>
-      <li>FIXED INCOME SECURITIES（Yield Curve Theory、Bond Portfolio Strategies）</li>
-    </ul>
-  </div>
-</section>
+<div class="school-block">
+  <span class="folder-icon" onclick="toggle('scu-courses')" title="Courses / Skills">📂</span>
+  東吳大學 財務工程與精算數學系 學士（2020–2024）
+  <ul id="scu-courses" class="course-list">
+    <li>QUANTITATIVE TRADING（Trading Strategy、Technical Analysis、Optimization）</li>
+    <li>FIXED INCOME SECURITIES（Yield Curve Theory、Bond Portfolio Strategies）</li>
+  </ul>
+</div>
 
+</section>
+  
 <script>
 function toggle(id) {
-  const box = document.getElementById(id);
-  box.style.display = box.style.display === "none" ? "block" : "none";
+  const element = document.getElementById(id);
+  element.style.display = element.style.display === 'none' ? 'block' : 'none';
 }
 </script>
+
 
 
 
