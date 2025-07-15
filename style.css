@@ -55,6 +55,18 @@ section ul li {
   margin-bottom: 8px;
 }
 
+#education button {
+  margin-top: 5px;
+  padding: 4px 10px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+#education ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+
 .skill {
   display: flex;
   align-items: center;
