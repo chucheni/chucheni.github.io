@@ -55,16 +55,29 @@ section ul li {
   margin-bottom: 8px;
 }
 
-#education button {
-  margin-top: 5px;
-  padding: 4px 10px;
-  font-size: 0.9rem;
+.school-block {
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.folder-icon {
   cursor: pointer;
+  margin-right: 10px;
+  font-size: 1.2rem;
+  transition: color 0.2s;
 }
-#education ul {
+
+.folder-icon:hover {
+  color: #0070f3;
+}
+
+.course-list {
+  display: none;
+  margin-top: 8px;
+  margin-left: 24px;
   list-style-type: disc;
-  padding-left: 20px;
 }
+
 
 
 .skill {
