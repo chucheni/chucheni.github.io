@@ -36,23 +36,39 @@ function copyEmail() {
 </script>
 
   <section id="education">
-    <h2>Education</h2>
-    <ul>
-      <li>清華大學 統計與數據科學研究所 碩士 (2024 – Present)</li>
-      <li>東吳大學 財務工程與精算數學系 學士 (2020–2024)</li>
-    </ul>
-  </section>
+  <h2>Education</h2>
+  <hr>
 
-  <section id="expertise">
-    <h2>Courses I Excelled In</h2>
-    <ul>
+  <!-- 清華大學 -->
+  <div>
+    <p>清華大學 統計與數據科學研究所 碩士（2024 – Present）</p>
+    <button onclick="toggle('nthu-courses')">顯示 / 隱藏相關課程</button>
+    <ul id="nthu-courses" style="display: none; margin-top: 10px;">
       <li>Quality Control（Shewhart Charts、CUSUM Charts）</li>
       <li>Statistical Computing（in R）</li>
-      <li>Multivariate Analysis (PCA、Classification、Clustering)</li>
-      <li>QUANTITATIVE TRADING (Trading Strategy、Technical Analysis、Optimization)</li>
-      <li>FIXED INCOME SECURITIES (Yield Curve Theory、Bond Portfolio Strategies)</li>
+      <li>Multivariate Analysis（PCA、Classification、Clustering）</li>
     </ul>
-  </section>
+  </div>
+
+  <!-- 東吳大學 -->
+  <div style="margin-top: 20px;">
+    <p>東吳大學 財務工程與精算數學系 學士（2020–2024）</p>
+    <button onclick="toggle('scu-courses')">顯示 / 隱藏相關課程</button>
+    <ul id="scu-courses" style="display: none; margin-top: 10px;">
+      <li>QUANTITATIVE TRADING（Trading Strategy、Technical Analysis、Optimization）</li>
+      <li>FIXED INCOME SECURITIES（Yield Curve Theory、Bond Portfolio Strategies）</li>
+    </ul>
+  </div>
+</section>
+
+<script>
+function toggle(id) {
+  const box = document.getElementById(id);
+  box.style.display = box.style.display === "none" ? "block" : "none";
+}
+</script>
+
+
 
 </body>
 </html>
