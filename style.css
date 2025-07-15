@@ -80,23 +80,3 @@ section ul li {
 }
 
 
-
-.skill {
-  display: flex;
-  align-items: center;
-  margin-bottom: 12px;
-}
-.skill span {
-  width: 160px;
-}
-.bar {
-  background: #eee;
-  flex-grow: 1;
-  height: 12px;
-  border-radius: 6px;
-  overflow: hidden;
-}
-.bar div {
-  height: 100%;
-  background: #0070f3;
-}
