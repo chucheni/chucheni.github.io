@@ -26,14 +26,7 @@
   </ul>
 </section>
   
-<script>
-function copyEmail() {
-  const email = "jacob20020519@gmail.com";
-  navigator.clipboard.writeText(email).then(() => {
-    alert("Email is copied！");
-  });
-}
-</script>
+
 
   <section id="education">
   <h2>Education</h2>
@@ -59,17 +52,28 @@ function copyEmail() {
 </div>
 
 </section>
+
   
-<script>
-function toggle(id) {
-  const element = document.getElementById(id);
-  element.style.display = element.style.display === 'none' ? 'block' : 'none';
-}
-</script>
-
-
-
-
 </body>
 </html>
 
+
+
+
+
+<script>
+  function copyEmail() {
+  const email = "jacob20020519@gmail.com";
+  navigator.clipboard.writeText(email).then(() => {
+    alert("Email is copied！");
+  });
+}
+
+  function toggle(id) {
+  const element = document.getElementById(id);
+  element.style.display = element.style.display === 'none' ? 'block' : 'none';
+}
+
+
+  
+</script>
