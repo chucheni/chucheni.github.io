@@ -71,6 +71,13 @@ section ul li {
   color: #0070f3;
 }
 
+.school-english {
+  font-size: 0.9rem;
+  color: #666;
+  margin-left: 28px;  /* 與 folder-icon 對齊 */
+  margin-top: 4px;
+}
+
 .course-list {
   display: none;
   color: #666666;
