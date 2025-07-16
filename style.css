@@ -71,13 +71,19 @@ section ul li {
   color: #0070f3;
 }
 
+.school-title {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
 .school-english {
   font-size: 0.9rem;
   color: #666;
-  margin-left: 28px;  /* 與 folder-icon 對齊 */
+  padding-left: 1.8em; /* 這個可微調讓英文與中文文字開頭對齊 */
   margin-top: 4px;
-  padding-left: 0.5em;
 }
+
 
 .course-list {
   display: none;
