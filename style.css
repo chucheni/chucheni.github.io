@@ -85,6 +85,10 @@ section ul li {
   margin-top: 4px;
 }
 
+.map-link {
+  text-decoration: none;
+}
+
 
 .course-list {
   display: none;
