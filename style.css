@@ -143,3 +143,20 @@ section ul li {
   margin-top: 4px;
 }
 
+/* artical */
+#slogan {
+  margin-top: 40px;
+  text-align: center;
+}
+
+#slogan h2 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.slogan-en {
+  font-size: 1rem;
+  color: #777;
+  margin-top: 8px;
+}
+
