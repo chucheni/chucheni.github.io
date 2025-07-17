@@ -144,12 +144,12 @@ section ul li {
 }
 
 /* artical */
-#slogan {
+#artical-slogan {
   margin-top: 40px;
   text-align: center;
 }
 
-#slogan h2 {
+#artical-slogan h2 {
   font-size: 1.5rem;
   color: #333;
 }
