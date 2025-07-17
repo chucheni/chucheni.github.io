@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 /* back artical*/
-fetch('../../back.html')
+fetch('../back.html')
     .then(res => res.text())
     .then(data => {
       document.getElementById('back-placeholder').innerHTML = data;
