@@ -82,34 +82,7 @@ I'm also interested in the application of instrumental variables and proxy varia
 </section>
 
 
-<script>
-  /* === 共用函式 === */
-  function toggleMenu() {
-    const menu = document.getElementById("menu");
-    menu.classList.toggle("active");
-  }
-
-  function copyEmail() {
-    const email = "jacob20020519@gmail.com";
-    navigator.clipboard.writeText(email).then(() => {
-      alert("Email is copied！");
-    });
-  }
-
-  function toggle(id) {
-    const element = document.getElementById(id);
-    const isHidden = window.getComputedStyle(element).display === 'none';
-    element.style.display = isHidden ? 'block' : 'none';
-  }
-
-  /* === 載入導覽列 === */
-  fetch('navbar.html')
-    .then(res => res.text())
-    .then(html => {
-      document.getElementById('navbar-placeholder').innerHTML = html;
-    })
-    .catch(err => console.error('無法載入導覽列：', err));
-</script>
+<script src="main.js"></script>
 
   
 </body>
