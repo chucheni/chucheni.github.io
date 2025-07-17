@@ -145,7 +145,7 @@ section ul li {
 
 /* artical */
 #artical-slogan {
-  margin-top: 40px;
+  margin-top: 25px;
   text-align: center;
 }
 
@@ -153,12 +153,13 @@ section ul li {
   text-align: left;
   font-size: 1.5rem;
   color: #333;
+  margin-bottom: 4px;
 }
 
 .slogan-en {
   text-align: left;
   font-size: 1rem;
   color: #777;
-  margin-top: 1px;
+  margin-top: 0px;
 }
 
