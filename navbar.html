@@ -4,3 +4,17 @@
     <li><a href="article.html">Artical</a></li>
   </ul>
 </nav>
+
+
+<!-- 在 index.html / article.html 中插入這段：
+
+<div id="navbar-placeholder"></div>
+
+<script>
+  fetch('navbar.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('navbar-placeholder').innerHTML = data;
+    });
+</script>
+放在 <body> 開頭處（例如 <header> 前），這樣每個頁面就能載入共同的導覽列。-->
