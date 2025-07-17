@@ -71,6 +71,10 @@ section ul li {
   color: #0070f3;
 }
 
+.map-link {
+  text-decoration: none;
+}
+
 .school-title {
   display: flex;
   align-items: baseline;
@@ -85,9 +89,7 @@ section ul li {
   margin-top: 4px;
 }
 
-.map-link {
-  text-decoration: none;
-}
+
 
 
 .course-list {
