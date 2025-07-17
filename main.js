@@ -29,3 +29,12 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .catch(err => console.error("無法載入導覽列：", err));
 });
+
+/*文章返回按鈕*/
+fetch('../../navbar.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('navbar-placeholder').innerHTML = data;
+      });
+
+
