@@ -90,8 +90,6 @@ section ul li {
 }
 
 
-
-
 .course-list {
   display: none;
   color: #666666;
@@ -101,4 +99,10 @@ section ul li {
   list-style-type: disc;
 }
 
+
+.CurrentFocus{
+  font-size: 1.1rem;
+  color: #666;
+  margin-top: 4px;
+}
 
