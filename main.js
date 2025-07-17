@@ -30,6 +30,13 @@ document.addEventListener("DOMContentLoaded", () => {
     .catch(err => console.error("無法載入導覽列：", err));
 });
 
+/* back artical*/
+fetch('../../back.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('back-placeholder').innerHTML = data;
+    });
+
 
 
 
