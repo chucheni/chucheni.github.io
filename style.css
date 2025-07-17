@@ -1,3 +1,40 @@
+/* 漢堡選單 */
+.navbar {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+}
+
+.hamburger {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.menu {
+  display: none;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  padding: 10px 20px;
+  list-style: none;
+  margin: 10px 0 0 0;
+  border-radius: 4px;
+}
+
+.menu li {
+  margin-bottom: 10px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.menu.active {
+  display: block;
+}
+
+
 body {
   font-family: "Segoe UI", Roboto, "Noto Sans TC", sans-serif;
   max-width: 800px;
