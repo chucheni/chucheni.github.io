@@ -6,6 +6,16 @@
   <title>CHU, CHEN-I website </title>
   <link rel="stylesheet" href="style.css">
 </head>
+
+<nav class="navbar">
+  <span class="hamburger" onclick="toggleMenu()">☰</span>
+  <ul class="menu" id="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="science.html">Artical</a></li>
+  </ul>
+</nav>
+
+  
 <body>
   <header>
     <img src="profile.JPG" alt="大頭照" class="profile-pic">
@@ -77,6 +87,11 @@ I'm also interested in the application of instrumental variables and proxy varia
 
 
 <script>
+  function toggleMenu() {
+    const menu = document.getElementById("menu");
+    menu.classList.toggle("active");
+  }
+
   function copyEmail() {
   const email = "jacob20020519@gmail.com";
   navigator.clipboard.writeText(email).then(() => {
