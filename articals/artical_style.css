@@ -28,8 +28,9 @@ h2 {
 /* ===== 返回按鈕區塊 ===== */
 .back-button {
   position: fixed;
-  margin-top: 20px;
-  padding-left: 10px;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
   font-size: 1rem;
 }
 
