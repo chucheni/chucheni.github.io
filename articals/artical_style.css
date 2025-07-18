@@ -11,6 +11,12 @@ body {
 h1 {
   margin: 10px 0 5px;
 }
+h2 {
+  color: #444;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+  margin-top: 15px;
+}
 
 /* ===== 返回按鈕區塊 ===== */
 .back-button {
