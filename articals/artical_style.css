@@ -112,3 +112,11 @@ h2 {
   line-height: 1.7;
   color: #333;
 }
+
+.reference {
+  font-style: italic;       /* 文字斜體 */
+  color: #666666;           /* 較淡的灰色，比主文顏色 #333 更淡 */
+  font-size: 0.95rem;       /* 可選：略小一點的字體，增加區隔感 */
+  margin-top: 30px;         /* 可選：與內文保持適當距離 */
+  line-height: 1.6;
+}
