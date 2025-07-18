@@ -1,0 +1,60 @@
+/* ===== 通用設定 ===== */
+body {
+  font-family: "Segoe UI", Roboto, "Noto Sans TC", sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  line-height: 1.6;
+  color: #333;
+}
+
+h1 {
+  margin: 10px 0 5px;
+}
+
+/* ===== 返回按鈕區塊 ===== */
+.back-button {
+  margin-top: 20px;
+  padding-left: 10px;
+  font-size: 1rem;
+}
+
+.back-button a {
+  text-decoration: none;
+  color: #0070f3;
+  transition: color 0.2s;
+}
+
+.back-button a:hover {
+  color: #004ea8;
+}
+
+/* ===== 文章容器 ===== */
+.article-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* ===== 日期樣式 ===== */
+.article-date {
+  color: #888;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+/* ===== 圖片樣式 ===== */
+.article-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin: 20px 0;
+}
+
+/* ===== 內文樣式 ===== */
+.article-content p {
+  margin-bottom: 1.2em;
+  line-height: 1.7;
+  color: #333;
+}
