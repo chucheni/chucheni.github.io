@@ -65,6 +65,16 @@ h2 {
   margin: 20px 0;
 }
 
+.article-image-wide {
+  display: block;          /* 讓 margin auto 有效 */
+  margin: 30px auto;       /* 上下間距＋水平置中 */
+  max-width: 100%;         /* 不超出容器寬度 */
+  width: 90%;              /* 正常情況下寬度為容器的 90% */
+  height: auto;            /* 自動依比例調整高度 */
+  border-radius: 6px;      /* 圓角，可視情況調整或移除 */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* 淡淡陰影讓圖片更有層次 */
+}
+
 /* ===== 內文樣式 ===== */
 .article-content p {
   margin-bottom: 1.4em;
