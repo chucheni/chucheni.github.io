@@ -89,6 +89,19 @@
       <img src="EX2causal.png" alt="Kidney stone" />
       <figcaption>（圖片說明：因果圖，來源：A first course in causal inference ）</figcaption>
       </figure>
+      <p>
+        圖中的 Z 為治療方式(1 為 Treatment A，0 為 Treatment B)，X 為結石大小(1 為小結石，0 為大結石)，Y 為是否成功去除結石(1 為成功，0為失敗)。
+        在當時的治療，如果看到小結石通常會更偏好 small puncture procedure (i.e. 當 X 從 0（大）→ 1（小）時，採用 Z = 1（open surgical procedure）的機率反而降低)，因此 X 對 Z 有負向影響。
+        而小結石相較於大結石，取出的成功機率更高 (i.e. X = 1 時，Y = 1（成功）的機率提高)，因此 X 對 Y 有正向的影響。
+        因此在因果效應的分析中，我們關心的 Z⭢Y 這條路徑(處置方法對結果的效應)中間有一個同時影響 Z 和 Y 的混淆因子 X (在因果推論中我們稱為confounder)。
+        如果我們不控制 X 對 Z⭢Y 的影響，就會得出 Treatment B 比 Treatment A 有效的結論。
+        但若我們對因果關係進行拆解，就能知道 Treatment B 比 Treatment A 成功率高並不代表 Treatment B 更有效。
+        而是因為我們對病情嚴重(大結石)的患者更傾向採取 Treatment A 的治療方法，從而導致 Treatment A 看似成功率較低。
+        但實質上是因為 Treatment A 治療的患者本來成功率就較低。
+        因此在這個例子中 Treatment A 實質上是比 Treatment B 成功率更高的治療方法。
+
+        總結來說：如果關心的路徑上有 confounder，那我們一定要進行控制，不然會導致錯誤的推論。
+      </p>
 
       
       
