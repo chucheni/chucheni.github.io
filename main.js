@@ -22,7 +22,7 @@ function toggle(id) {
 
 /* ========= 當頁載入完成後才插入 Navbar ========= */
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("navbar.html")
+  fetch("/navbar.html")
     .then(res => res.text())
     .then(html => {
       document.getElementById("navbar-placeholder").innerHTML = html;
