@@ -25,6 +25,16 @@ h2 {
   margin-bottom: 10px;
 }
 
+h3 {
+  font-size: 1.1rem;         /* 子標題略小 */
+  font-weight: 600;
+  color: #444;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 4px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
 /* ===== 返回按鈕區塊 ===== */
 .back-button {
   position: fixed;
