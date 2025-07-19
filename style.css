@@ -174,21 +174,15 @@ section ul li {
 
 
 @media (orientation: portrait) {
-  body {
-    max-width: 100vw;
-    padding: 0; /* 全螢幕寬度，讓 .article-list 控制左右間距 */
-  }
 
   .article-list {
-    width: 100%;
-    padding: 0 16px;             /* 左右各留 16px 空間 */
+    width: 95%;
     grid-template-columns: 1fr;
     justify-items: stretch;      /* 卡片撐滿可用寬度 */
   }
 
   .article-card {
     width: 90%;
-    max-width: none;             /* 移除限制，讓卡片寬度由外層控制 */
   }
 }
 
