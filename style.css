@@ -173,7 +173,7 @@ section ul li {
 }
 
 
-@media (max-width: 640px) {
+@media (orientation: portrait) {
   .article-list {
     grid-template-columns: 1fr;
   }
