@@ -85,6 +85,26 @@ h2 {
   border-radius: 3px;      /* 圓角，可視情況調整或移除 */
 }
 
+.image-with-caption-main {
+  display: block;
+  margin: 24px auto;           /* 圖片區塊上下間距 */
+  text-align: center;          /* 圖片與註解皆置中 */
+  width: 80%;                  /* 整體寬度，可依情況調整 */
+  max-width: 100%;
+}
+
+.image-with-caption-main img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.image-with-caption-main figcaption {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 4px;             /* 註解與圖片間距，微小即可 */
+}
+
 .image-with-caption {
   display: block;
   margin: 24px auto;           /* 圖片區塊上下間距 */
