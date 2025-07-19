@@ -178,7 +178,7 @@ section ul li {
   .article-list {
     width: 95%;
     grid-template-columns: 1fr;
-    justify-items: stretch;      /* 卡片撐滿可用寬度 */
+    justify-items: center;      /* 卡片撐滿可用寬度 */
   }
 
   .article-card {
