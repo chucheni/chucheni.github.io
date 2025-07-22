@@ -35,11 +35,15 @@
 
       <h2>工具變數是什麼？ </h2>
       <p>
+        工具變數的起源是計量經濟學，被用來處理內生性問題(包含處置與結果互為因果、遺漏變數等)。
+        在因果推論這個領域，引用了工具變數來處理存在未測量混淆因子(也就是一定會遺漏的變數)。
+        
         考慮以下因果圖:
+        
       </p>
 
       <figure class="image-with-caption">
-      <img src="/articals/IV/causal.png" alt="疫苗因果圖" />
+      <img src="/articals/IV/causal.png" alt="因果圖" />
       <figcaption>（ 來源：Wang, Linbo, and Eric Tchetgen Tchetgen. (2018) ）</figcaption>
       </figure>
 
@@ -49,11 +53,14 @@
         這時工具變數 (Z) 給了我們一個新的途徑來對 D → Y 進行估計。接下來將介紹工具變數須具備的條件以及如何使用工具變數進行估計。
       </p>
 
-      <h3>1. IV 須滿足的條件 </h3>
+      <h3>IV 須滿足的條件 </h3>
 
       <p>
         以下為一個有效的 IV 須具備的條件：<br><br>
-        (i) IV 要能導致 D 改變
+        (1.) IV 要能導致 D 改變。<br>
+        (2.) IV 在給定 X 的情況下需與 U 獨立。<br>
+        (3.) IV 對 Y 的影響僅透過 D (i.e. 不存在 Z → Y 的直接路徑)。<br><br>
+        這邊都是用文字敘述，如果對因果推論 Counterfactual 框架下，IV 的數學定義有興趣的可以參考 (Baiocchi, Michael et al. (2014).)。
       </p>
 
 
@@ -86,6 +93,7 @@
       <div class="reference">
       Baiocchi, Michael et al. “Instrumental variable methods for causal inference.” Statistics in medicine vol. 33,13 (2014): 2297-340. doi:10.1002/sim.6128<br><br>
       Wang, Linbo, and Eric Tchetgen Tchetgen. “Bounded, efficient and multiply robust estimation of average treatment effects using instrumental variables.” Journal of the Royal Statistical Society. Series B, Statistical methodology vol. 80,3 (2018): 531-550. doi:10.1111/rssb.12262<br><br>
+      Hernán MA, Robins JM (2020). Causal Inference: What If. Boca Raton: Chapman & Hall/CRC <br><br>
 
        
       </div>
