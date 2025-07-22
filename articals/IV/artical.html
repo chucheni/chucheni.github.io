@@ -84,7 +84,7 @@
       </p>
       <p>
         $$
-        \beta = \frac{\mathbb{E}[Y \mid Z = 1] - \mathbb{E}[Y \mid Z = 0]}{\mathbb{E}[A \mid Z = 1] - \mathbb{E}[A \mid Z = 0]}
+        \beta = \frac{\mathbb{E}[Y \mid Z = 1] - \mathbb{E}[Y \mid Z = 0]}{\mathbb{E}[D \mid Z = 1] - \mathbb{E}[D \mid Z = 0]}
         $$
       </p>
 
@@ -93,7 +93,12 @@
         若假設(4-2.)成立，\( \beta \) 是 average treatment effect，也就是全體的平均因果效應。
         可能有人會想：既然(4-2.)可以識別全體的因果效應，為甚麼還要用(4-1.)？
         這牽扯到數學的技術細節，直觀來說，我們可以從資料檢證(4-1.)是否真實成立，但(4-2.)是不可檢驗的。
+        所以要用哪個假設是比較主觀的，沒有孰優孰劣。<br><br>
+        在有了識別式後，我們可以對其進行估計，常用的識別式是：
       </p>
+      
+
+      
 
 
       <h2>結論</h2>
